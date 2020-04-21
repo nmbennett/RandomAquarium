@@ -4,7 +4,7 @@ Created on Mon Apr 20 17:27:42 2020
 
 @author: Neil
 
-Tweeting for the first time
+Tweeting for the very first time
 """
 
 import tweepy, sys
