@@ -20,5 +20,6 @@ auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
-
-api.update_status("\n".join(create_aquarium(randint(4,6),randint(7,10))))
+temp = "\n".join(create_aquarium(5,8))
+api.update_status(temp)
+print(temp)
