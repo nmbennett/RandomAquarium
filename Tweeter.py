@@ -7,9 +7,9 @@ Created on Mon Apr 20 17:27:42 2020
 Tweeting for the very first time
 """
 
-import tweepy, sys
+import tweepy
+import time
 from Aquarium import create_aquarium
-from random import randint
 from credentials import CONSUMER_KEY
 from credentials import CONSUMER_SECRET
 from credentials import ACCESS_KEY
@@ -19,7 +19,10 @@ from credentials import ACCESS_SECRET
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
+tweet_timing = 60 * 60 * 5
 
-temp = "\n".join(create_aquarium(5,8))
-api.update_status(temp)
-print(temp)
+while True:
+    temp = "\n".join(create_aquarium(5,8))
+    api.update_status(temp)
+    print(temp)
+    time.sleep(tweet_timing)
