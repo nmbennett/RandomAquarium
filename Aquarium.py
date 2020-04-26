@@ -7,7 +7,6 @@ Created on Sun Apr 19 09:17:56 2020
 Making an emoji aquarium
 """
 
-import emoji
 from random import sample
 
 '''
