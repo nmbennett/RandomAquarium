@@ -10,10 +10,10 @@ Tweeting for the very first time
 import tweepy
 import time
 from Aquarium import create_aquarium
-from credentials import CONSUMER_KEY
-from credentials import CONSUMER_SECRET
-from credentials import ACCESS_KEY
-from credentials import ACCESS_SECRET
+#from credentials import CONSUMER_KEY
+#from credentials import CONSUMER_SECRET
+#from credentials import ACCESS_KEY
+#from credentials import ACCESS_SECRET
 from os import environ
 
 CONSUMER_KEY = environ['CONSUMER_KEY']
