@@ -24,7 +24,7 @@ ACCESS_SECRET = environ['ACCESS_SECRET']
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
-tweet_timing = 60 * 60 * 5
+tweet_timing = 60 * 60 * 4
 
 while True:
     temp = "\n".join(create_aquarium(5,8))
