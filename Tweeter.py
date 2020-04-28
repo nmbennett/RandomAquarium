@@ -29,5 +29,4 @@ tweet_timing = 60 * 60 * 4
 while True:
     temp = "\n".join(create_aquarium(5,8))
     api.update_status(temp)
-    print(temp)
     time.sleep(tweet_timing)
